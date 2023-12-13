@@ -33,3 +33,12 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+
+getJohnProfile()
+  .then((resolve) => {
+    console.log(resolve);
+  })
+  .then(getJohnOrders)
+  .then((resolve) => {
+    console.log(resolve);
+  });
