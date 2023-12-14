@@ -13,3 +13,9 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+
+const logData = (data) => {
+  console.log(data);
+};
+
+getJohnProfile().then(logData).catch(logData);
